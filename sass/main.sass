@@ -1,0 +1,93 @@
+*
+  padding: 0
+  margin: 0
+
+html
+  position: relative
+  background: linear-gradient(to top, #FFDF5C, #F47704)
+  width: 100%
+  height: 100%
+
+.col-sm-6
+  position: absolute
+  top: 50%
+  margin-top: -300px
+
+#startScreen,
+#questionScreen,
+#endScreen
+  border-radius: 20px
+  position: relative
+  background-color: tomato
+  width: 100%
+  box-shadow: 0 30px 8px -10px rgba(0, 0, 0, 0.2)
+  border: 2px solid black
+  background: floralwhite
+  display: none
+  height: 600px
+  text-align: center
+
+#startScreen
+  display: block
+  background-color: cadetblue
+  #start
+    position: absolute
+    font-size: 30px
+    border-radius: 10px
+    top: 50%
+    padding: 15px
+    outline: none
+    border: none
+    border: 2px solid black
+    left: 50%
+    box-shadow: 0 20px 5px -10px rgba(0,0,0,.5)
+    transition: all .1s ease
+    transform: translate(-50%, -50%)
+    &:active
+      border: 2px solid black
+      box-shadow: 0 10px 5px -5px rgba(0,0,0,.5)
+      top: 51%
+      outline: none
+
+h2
+  border-bottom: 2px solid black
+  padding-bottom: 18px
+  margin-bottom: 60px
+
+h3
+  border-bottom: 2px solid black
+  padding-bottom: 45px
+
+.questionContainer
+  display: flex
+  flex-wrap: wrap
+  height: 300px
+  align-items: center
+  justify-content: space-around
+  button
+    width: 350px
+    font-size: 20px
+    height: 70px
+
+#next
+  width: 250px
+  height: 60px
+  margin: 0 auto
+  display: none
+  font-size: 26px
+
+#endScreen
+  background-color: cadetblue
+  button
+    width: 200px
+    box-shadow: 0 20px 5px -10px rgba(0,0,0,.5)
+    transition: all .1s ease
+    border-radius: 10px
+    border: 2px solid black
+    padding: 15px
+    font-size: 24px
+  p
+    padding: 50px
+    font-size: 40px
+    margin-top: 100px
+    margin-bottom: 60px
